@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  keygen:
+    image: crypto-keygen
+    restart: always
+    ports:
+      - 5001:5000
+  server:
+    image: crypto-server
+    restart: always
+    ports:
+      - 5002:5000
